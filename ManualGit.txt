@@ -1,0 +1,25 @@
+VERIFICANDO INSTALACION
+$git --version
+
+
+CONFIGURANDO GIT
+$git config --global user.name "Miguel Nieva"
+$git config --global user.email "m@platzi.com"
+
+VERIFICANDO CONFIGURACION
+$git config --list
+
+INICIAR GIT 
+$git init
+
+
+ITERACION BASICA
+$git add (file o directorio)
+$git commit -m "Mensaje"
+
+VERIFICAR STATUS
+$git status
+
+
+GENERANDO LLAVE SSH
+$ssh-keygen -t rsa -b 4096 -C "tucorreo@xx.com"
