@@ -27,8 +27,9 @@ $ssh-keygen -t rsa -b 4096 -C "tucorreo@xx.com"
 CREANDO CONECCION A REPOSITORIO REMOTO
 $git remote add origin "direccion SSH del repositorio en github" 
 
-ENVIANDO A REPOSITORIO REMOTO
+ENVIANDO A REPOSITORIO REMOTO(te va a pedir password)
 $git push origin master
+
 
 REMOVIENDO REPOSITORIO REMOTO
 $git remote remove origin
