@@ -1,7 +1,6 @@
 VERIFICANDO INSTALACION
 $git --version
 
-
 CONFIGURANDO GIT
 $git config --global user.name "Miguel Nieva"
 $git config --global user.email "m@platzi.com"
@@ -27,9 +26,12 @@ $ssh-keygen -t rsa -b 4096 -C "tucorreo@xx.com"
 CREANDO CONECCION A REPOSITORIO REMOTO
 $git remote add origin "direccion SSH del repositorio en github" 
 
-ENVIANDO A REPOSITORIO REMOTO(te va a pedir password)
+ENVIANDO A REPOSITORIO REMOTE
 $git push origin master
-
 
 REMOVIENDO REPOSITORIO REMOTO
 $git remote remove origin
+
+ACTUALIZANDO REPOSITORIO
+$git fetch origin
+$git merge origin/master
