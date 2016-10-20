@@ -1,0 +1,2 @@
+REMOVIENDO REPOSITORIO REMOTO
+$git remote remove origin

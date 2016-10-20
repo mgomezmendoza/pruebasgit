@@ -8,30 +8,30 @@ $git config --global user.email "m@platzi.com"
 VERIFICANDO CONFIGURACION
 $git config --list
 
+GENERANDO LLAVE SSH
+$ssh-keygen -t rsa -b 4096 -C "tucorreo@xx.com"
+
 INICIAR GIT 
 $git init
 
-
 ITERACION BASICA
-$git add (file o directorio)
+$git add -A
 $git commit -m "Mensaje"
 
 VERIFICAR STATUS
 $git status
 
 
-GENERANDO LLAVE SSH
-$ssh-keygen -t rsa -b 4096 -C "tucorreo@xx.com"
 
+/*******REPORSITORIOS REMOTOS***************/
 CREANDO CONECCION A REPOSITORIO REMOTO
 $git remote add origin "direccion SSH del repositorio en github" 
 
-REMOVIENDO REPOSITORIO REMOTO
-$git remote remove origin
-
-ACTUALIZANDO REPOSITORIO
+BAJANDO LO ULTIMO DEL REPOSITORIO REMOTO
 $git fetch origin
+
+FUSIONANDO REPOSITORIO REMOTO CON LOCAL
 $git merge origin/master
 
-ENVIANDO A REPOSITORIO REMOTE
+ENVIANDO DE LOCAL A REPOSITORIO REMOTE
 $git push origin master
