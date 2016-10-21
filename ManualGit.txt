@@ -35,3 +35,15 @@ $git merge origin/master
 
 ENVIANDO DE LOCAL A REPOSITORIO REMOTE
 $git push origin master
+
+
+CREANDO UN NUEVO REPOSITORIO LOCAL LINEA DE COMANDOS
+git init
+git add -A
+git commit -m "first commit"
+git remote add origin git@github.com:mgomezmendoza/SIRNPCD.git
+git push -u origin master
+
+HACIENDO PUSH DESDE UN REPOSITORO LOCAL POR LINEA DE COMANDOS
+git remote add origin git@github.com:mgomezmendoza/SIRNPCD.git
+git push -u origin master

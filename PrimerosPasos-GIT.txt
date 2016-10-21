@@ -1,0 +1,56 @@
+CREAR CUENTA EN GITHUB
+https://github.com/
+
+INSTALAR GIT
+https://git-scm.com/
+
+Luego utilizando "GIT BASH"
+VERIFICANDO INSTALACION
+$git --version
+
+CONFIGURANDO GIT
+$git config --global user.name "Mi Nombre"
+$git config --global user.email "mi@correogithub.com"
+
+VERIFICANDO CONFIGURACION
+$git config --list
+
+GENERANDO LLAVE SSH
+$ssh-keygen -t rsa -b 4096 -C "mi@correogithub.com"
+
+Luego copiar el codigo de la llave generada
+Ingresando a tu cuenta en GITHUB en:
+https://github.com/settings/keys
+Matriculas tu llave
+
+Crear un carpeta en tu PC donde se bajará todo el codigo fuente
+INICIAR GIT 
+$git init
+
+CREANDO CONECCION A REPOSITORIO REMOTO
+$git remote add origin git@github.com:mgomezmendoza/CONADIS_SIRNPD.git
+
+BAJANDO REPOSITORIO REMOTO
+$git fetch origin
+
+FUSIONANDO REPOSITORIO REMOTO CON LOCAL
+$git merge origin/master
+
+
+********LISTO YA TIENES TU REPOSITORIO LOCAL ACTUALIZADO***********
+
+
+Luego cuando ya este trabajando y quieras enviar tus actualizaciones
+VERIFICAR STATUS
+$git status
+
+AGREGANDO CAMBIOS A REPOSITORIO LOCAL
+$git add -A
+$git commit -m "mi comentario"
+
+ACTUALIZANDO REPOSITORIO LOCAL DESDE EL REMOTO( NUNCA TE OLVIDES)
+$git fetch origin
+FUSIONANDO REPOSITORIO REMOTO CON LOCAL
+$git merge origin/master
+ENVIANDO DE LOCAL A REPOSITORIO REMOTE
+$git push origin master
